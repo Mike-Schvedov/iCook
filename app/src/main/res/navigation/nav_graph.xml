@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.mikeschvedov.icook.ui.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_MainCourseFragment"
+            app:destination="@id/MainCourseFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_appetizersFragment"
+            app:destination="@id/appetizersFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_soupsFragment"
+            app:destination="@id/soupsFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_saladsFragment"
+            app:destination="@id/saladsFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_dressingsFragment"
+            app:destination="@id/dressingsFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_bakingFragment"
+            app:destination="@id/bakingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainCourseFragment"
+        android:name="com.mikeschvedov.icook.ui.MainCourseFragment"
+        android:label="Main Course Fragment"
+        tools:layout="@layout/fragment_main_course">
+
+        <action
+            android:id="@+id/action_MainCourseFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appetizersFragment"
+        android:name="com.mikeschvedov.icook.ui.AppetizersFragment"
+        android:label="fragment_appetizers"
+        tools:layout="@layout/fragment_appetizers" >
+        <action
+            android:id="@+id/action_appetizersFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bakingFragment"
+        android:name="com.mikeschvedov.icook.ui.BakingFragment"
+        android:label="fragment_baking"
+        tools:layout="@layout/fragment_baking" >
+        <action
+            android:id="@+id/action_bakingFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saladsFragment"
+        android:name="com.mikeschvedov.icook.ui.SaladsFragment"
+        android:label="fragment_salads"
+        tools:layout="@layout/fragment_salads" >
+        <action
+            android:id="@+id/action_saladsFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/soupsFragment"
+        android:name="com.mikeschvedov.icook.ui.SoupsFragment"
+        android:label="fragment_soups"
+        tools:layout="@layout/fragment_soups" >
+        <action
+            android:id="@+id/action_soupsFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dressingsFragment"
+        android:name="com.mikeschvedov.icook.ui.DressingsFragment"
+        android:label="DressingsFragment" >
+        <action
+            android:id="@+id/action_dressingsFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>
