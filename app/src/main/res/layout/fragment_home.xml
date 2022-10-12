@@ -7,7 +7,7 @@
     tools:context=".ui.HomeFragment">
 
     <View
-        android:background="@color/black"
+        android:background="@drawable/first"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,6 +22,10 @@
         android:layout_height="0dp"
         android:fontFamily="@font/suez_one"
         android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="6"
+        android:shadowDy="-6"
+        android:shadowRadius="2"
         android:text="ראשונות"
         android:textColor="@color/white"
         android:textSize="44sp"
@@ -39,7 +43,7 @@
 
 
     <View
-        android:background="@color/black"
+        android:background="@drawable/main"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/guideline2"
@@ -54,6 +58,10 @@
         android:layout_height="0dp"
         android:fontFamily="@font/suez_one"
         android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="6"
+        android:shadowDy="-6"
+        android:shadowRadius="2"
         android:text="עיקריות"
         android:textColor="@color/white"
         android:textSize="44sp"
@@ -70,7 +78,7 @@
         app:layout_constraintGuide_percent="0.3233" />
 
     <View
-        android:background="@color/black"
+        android:background="@drawable/salad"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/guideline3"
@@ -85,6 +93,10 @@
         android:layout_height="0dp"
         android:fontFamily="@font/suez_one"
         android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="6"
+        android:shadowDy="-6"
+        android:shadowRadius="2"
         android:text="סלטים"
         android:textColor="@color/white"
         android:textSize="44sp"
@@ -101,7 +113,7 @@
         app:layout_constraintGuide_percent="0.4998" />
 
     <View
-        android:background="@color/black"
+        android:background="@drawable/dressing"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/guideline4"
@@ -117,6 +129,10 @@
         android:fontFamily="@font/suez_one"
         android:gravity="center"
         android:text="רטבים/ממרחים"
+        android:shadowColor="@color/black"
+        android:shadowDx="6"
+        android:shadowDy="-6"
+        android:shadowRadius="2"
         android:textColor="@color/white"
         android:textSize="44sp"
         app:layout_constraintBottom_toTopOf="@id/guideline4"
@@ -132,7 +148,7 @@
         app:layout_constraintGuide_percent="0.6664" />
 
     <View
-        android:background="@color/black"
+        android:background="@drawable/soup"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +164,11 @@
         android:fontFamily="@font/suez_one"
         android:gravity="center"
         android:text="מרקים"
-        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="6"
+        android:shadowDy="-6"
+        android:shadowRadius="2"
+        android:textColor="#FDFCFC"
         android:textSize="44sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -164,7 +184,7 @@
         app:layout_constraintGuide_percent="0.8333" />
 
     <View
-        android:background="@color/black"
+        android:background="@drawable/baking"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -180,6 +200,10 @@
         android:fontFamily="@font/suez_one"
         android:gravity="center"
         android:text="אפייה"
+        android:shadowColor="@color/black"
+        android:shadowDx="6"
+        android:shadowDy="-6"
+        android:shadowRadius="2"
         android:textColor="@color/white"
         android:textSize="44sp"
         app:layout_constraintBottom_toBottomOf="parent"

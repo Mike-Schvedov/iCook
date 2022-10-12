@@ -1,27 +1,408 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainCourseFragment">
+    android:orientation="vertical"
+    android:background="@drawable/cuttingboard"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <TextView
-        android:id="@+id/textview_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="עיקריות"
+                    android:background="@drawable/main"
+                    android:fontFamily="@font/suez_one"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="6"
+                    android:shadowDy="-6"
+                    android:shadowRadius="2"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="55sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/gulash_img"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/gulash"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="גולש חורפי"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/spicy_fish_img"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/spicy_fish"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="דגים חריפים (חריימה)"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/memulaim_img"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/memulaim"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="ממולאים"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/nioki_armonim_img"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/nioki_armonim"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="ניוקי ערמונים"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/pasta_shery_img"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/pasta_shery_bazil"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="פסטה שרי ובזיליקום"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/kube_img"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/kube"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="קובה סלק"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/kuskus_img"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/kuskus"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="קוסקוס ומרק ירקות"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rizototomat"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/rizoto_tomato"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="ריזוטו עגבניות"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rizototomat"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/my_button_bg_menu"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/sweetsourchicken"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.8"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="2.5"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/my_button_bg_menu"
+                    android:scaleType="fitCenter"
+                    android:text="עוף חמוץ מתוק"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

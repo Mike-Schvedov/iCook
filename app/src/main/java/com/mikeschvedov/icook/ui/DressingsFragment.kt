@@ -1,5 +1,6 @@
 package com.mikeschvedov.icook.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -21,8 +22,36 @@ class DressingsFragment : Fragment() {
 
         _binding = FragmentDressingsBinding.inflate(inflater, container, false)
 
+        binding.salsa.setOnClickListener {
+            setRecipeData("salsa.pdf", "סלסה")
+        }
+
+        binding.chimichuri.setOnClickListener {
+            setRecipeData("chimichuri.pdf", "צ'ימיצ'ורי")
+        }
+
+        binding.guacamoli.setOnClickListener {
+            setRecipeData("guacamole.pdf", "גוואקמולי")
+        }
+
         return binding.root
 
+    }
+
+    private fun setRecipeData(pdfName: String, recipeTitle: String) {
+        val myintent = Intent(requireContext(), RecipePrototypeActivity::class.java)
+
+        //SET EXTRAS
+        val extras = Bundle()
+        //SET PDF NAME
+        extras.putString("fileName", pdfName)
+        extras.putString("recipe", recipeTitle)
+
+        //PUT EXTRAS BUNDLE INTO INTENT
+        myintent.putExtras(extras)
+        //START ACTIVITY
+        startActivity(myintent)
+        activity?.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
     override fun onDestroyView() {
