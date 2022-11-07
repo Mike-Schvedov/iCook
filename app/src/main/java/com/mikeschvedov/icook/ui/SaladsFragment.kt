@@ -35,6 +35,10 @@ class SaladsFragment : Fragment() {
             setRecipeData("cornsalad.pdf", "סלט תירס חמוץ")
         }
 
+        binding.humus.setOnClickListener {
+            setRecipeData("humus.pdf", "חומוס ביתי")
+        }
+
         return binding.root
     }
 

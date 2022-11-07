@@ -25,6 +25,9 @@ class AppetizersFragment : Fragment() {
         binding.tartar.setOnClickListener {
             setRecipeData("tartar.pdf", "טרטר")
         }
+        binding.falafel.setOnClickListener {
+            setRecipeData("falafel.pdf", "פלאפל")
+        }
 
         return binding.root
 

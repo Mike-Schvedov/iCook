@@ -56,6 +56,10 @@ class MainCourseFragment : Fragment() {
             setRecipeData("sweetsourchicken.pdf", "עוף חמוץ מתוק")
         }
 
+        binding.karichicken.setOnClickListener {
+            setRecipeData("chikencoconut.pdf", "עוף בקוקוס וקארי")
+        }
+
         return binding.root
 
     }
