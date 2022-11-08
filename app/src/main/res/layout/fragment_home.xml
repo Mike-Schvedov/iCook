@@ -216,7 +216,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="V1.0.3"
+        android:text="@string/app_version"
         android:textColor="@color/white"
         android:padding="8dp"
         />
