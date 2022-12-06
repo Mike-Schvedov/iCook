@@ -28,6 +28,9 @@ class AppetizersFragment : Fragment() {
         binding.falafel.setOnClickListener {
             setRecipeData("falafel.pdf", "פלאפל")
         }
+        binding.pickels.setOnClickListener {
+            setRecipeData("pickels.pdf", "חמוצים")
+        }
 
         return binding.root
 
