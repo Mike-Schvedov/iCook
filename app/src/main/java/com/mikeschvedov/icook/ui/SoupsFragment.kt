@@ -35,6 +35,9 @@ class SoupsFragment : Fragment() {
             setRecipeData("tomkagai_soup.pdf", "טום קה גאי")
         }
 
+        binding.tomatosoup.setOnClickListener {
+            setRecipeData("tomatosoup.pdf", "מרק עגבניות")
+        }
 
         return binding.root
 

@@ -35,6 +35,10 @@ class SaladsFragment : Fragment() {
             setRecipeData("cornsalad.pdf", "סלט תירס חמוץ")
         }
 
+        binding.cherrynana.setOnClickListener {
+            setRecipeData("cherrynana.pdf", "סלט שרי ונענע")
+        }
+
         return binding.root
     }
 

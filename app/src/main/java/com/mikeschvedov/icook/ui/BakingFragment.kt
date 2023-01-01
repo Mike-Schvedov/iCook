@@ -31,6 +31,10 @@ class BakingFragment : Fragment() {
             setRecipeData("hamburger_buns.pdf", "לחמניות המבורגר")
         }
 
+        binding.fuccachia.setOnClickListener {
+            setRecipeData("fuccachia.pdf", "פוקצ'ה")
+        }
+
         return binding.root
 
     }
