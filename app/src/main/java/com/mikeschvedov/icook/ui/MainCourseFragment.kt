@@ -60,6 +60,10 @@ class MainCourseFragment : Fragment() {
             setRecipeData("chikencoconut.pdf", "עוף בקוקוס וקארי")
         }
 
+        binding.meatballs.setOnClickListener {
+            setRecipeData("meatballs.pdf", "קציצות בתנור")
+        }
+
         return binding.root
 
     }

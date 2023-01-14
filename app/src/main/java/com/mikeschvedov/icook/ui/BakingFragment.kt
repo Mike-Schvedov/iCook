@@ -35,6 +35,10 @@ class BakingFragment : Fragment() {
             setRecipeData("fuccachia.pdf", "פוקצ'ה")
         }
 
+        binding.hala.setOnClickListener {
+            setRecipeData("hala.pdf", "חלה לשבת")
+        }
+
         return binding.root
 
     }

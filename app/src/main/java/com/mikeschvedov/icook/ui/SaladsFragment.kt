@@ -39,6 +39,10 @@ class SaladsFragment : Fragment() {
             setRecipeData("cherrynana.pdf", "סלט שרי ונענע")
         }
 
+        binding.greenbeans.setOnClickListener {
+            setRecipeData("greenbeans.pdf", "שעועית ירוקה בסגנון אסיאתי")
+        }
+
         return binding.root
     }
 
